@@ -91,7 +91,7 @@ if [[ $PORT ]]; then
 fi
 
 # Setup postgres for liferay
-if [ ! "$POSTGRES_HOST" ] || [ ! "$POSTGRES_USER" ] || ( [ ! -f "$POSTGRES_PASSWORD_FILE" ] && [ ! "$POSTGRES_PASSWORD"] ); then
+if [ ! "$POSTGRES_HOST" ] || [ ! "$POSTGRES_USER" ] || ( [ ! -f "$POSTGRES_PASSWORD_FILE" ] && [ ! "$POSTGRES_PASSWORD" ] ); then
     echo "postgres configuration incomplete"
     exit 1
 fi
